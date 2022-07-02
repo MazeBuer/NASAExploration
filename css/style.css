@@ -1,0 +1,234 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  .dailyPhoto{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+  }
+  
+
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+          /* INDEX. HTML PAGE */
+
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.indexMain {
+  position:absolute;  
+  z-index:1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  font-family: 'Russo One', 'Kdam Thmor Pro',  'Source Sans Pro';
+}
+
+.indexH1, .indexMain p, .indexNav {
+  width: 100%;
+  text-align: center;
+}
+
+.indexH1 {
+  padding-top: 10rem;
+  font-size: 5rem;
+  text-shadow: 3px 3px 5px rgb(155, 167, 52);
+  color: white;
+  text-decoration: underline solid white;
+    text-underline-offset: 4rem;
+}
+
+.indexMain p {
+  height: 3rem;
+  font-size: 2rem;
+  text-shadow: 3px 3px 5px rgb(155, 167, 52);
+  color: white;
+}
+
+.indexNav ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  
+}
+
+.indexNav {
+  margin-bottom: 15rem;
+}
+
+.nasaL {
+  width: 8rem;
+}
+
+.earthL {
+  width: 7rem;
+}
+
+.marsL {
+  width: 10.5rem;
+}
+
+.rocketL {
+  width: 6.5rem;
+}
+
+.logo:hover {
+  -webkit-animation:spin 3s linear infinite;
+  -moz-animation:spin 3s linear infinite;
+  animation:spin 3s linear infinite;
+}
+.nasaL:hover {
+  -webkit-transform: rotateZ(-10deg);
+-ms-transform: rotateZ(-10deg);
+transform: rotateZ(-10deg);
+transition: 1s ease;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* Media Queries */
+
+@media only screen and (min-device-width: 100px) and (max-device-width: 1000px) {
+
+ .indexH1 {
+    font-size: 10rem;
+    text-decoration: none;
+  }
+  .indexMain p {
+    font-size: 5rem;
+    padding-bottom: 18rem;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  .indexNav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .earthL {
+    width: 15rem;
+  }
+  .nasaL {
+    width: 18rem;
+  }
+
+  .marsL {
+    width: 25rem;
+  }
+
+  .rocketL {
+    width: 15rem;
+  }
+
+}
+
+    /* Picture Of The Day */
+  img {
+    object-fit: cover;
+  }
+
+  .contentPic {
+    font-family: 'Kdam Thmor Pro',  'Source Sans Pro';
+    background-color: black;
+    color: white;
+  }
+.stripImage {
+  width: 20rem;
+  height: 8rem;
+}
+
+
+  /* Header */
+.picOfDayHeader nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.picLogo {
+  width: 3rem;
+}
+
+.listPic {
+  list-style-type: none;
+}
+
+/* Main  */
+
+.container {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.picMain .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.picMain {
+  display: flex;
+  justify-content: space-evenly;
+  /* padding: 0.5rem 0; */
+  align-items: center;
+  
+
+}
+
+.picSec1 img {
+  width: 75%;
+}
+
+.picSec2 img {
+  width: 60%;
+}
+
+.picSec2 {
+  margin-bottom: 1.3rem;
+}
+
+
+.picMain h2 {
+  font-size: 2rem;
+}
+
+.picInfo {
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.picInfo p, .picInfo div{
+  padding: 2rem 0;
+}
+
+
+.nasaPhoto {
+  padding-bottom: 5rem;
+}
