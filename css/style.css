@@ -5,6 +5,8 @@
 /* Box Model Hack */
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   /******************************************
@@ -155,7 +157,7 @@ transition: 1s ease;
 
   .contentPic {
     font-family: 'Kdam Thmor Pro',  'Source Sans Pro';
-    background-color: black;
+    background-image: url('https://images.unsplash.com/photo-1590272456521-1bbe160a18ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80');
     color: white;
   }
 .stripImage {
@@ -167,8 +169,9 @@ transition: 1s ease;
   /* Header */
 .picOfDayHeader nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 2rem 0;
 }
 
 
@@ -180,12 +183,25 @@ transition: 1s ease;
   list-style-type: none;
 }
 
-/* Main  */
+.listPic a {
+  color: white;
+  text-decoration: none;
+}
 
+.listPic a:hover {
+  color: #055787;
+}
+
+/* Main  */
+.main {
+  padding: 3rem 0 1rem 0;
+
+  
+}
 .container {
   max-width: 80%;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .picMain .container {
@@ -196,8 +212,9 @@ transition: 1s ease;
 .picMain {
   display: flex;
   justify-content: space-evenly;
-  /* padding: 0.5rem 0; */
+  padding: 0.5rem 0;
   align-items: center;
+  text-align: center;
   
 
 }
@@ -207,7 +224,7 @@ transition: 1s ease;
 }
 
 .picSec2 img {
-  width: 60%;
+  width: 80%;
 }
 
 .picSec2 {
@@ -219,9 +236,13 @@ transition: 1s ease;
   font-size: 2rem;
 }
 
+.picSec3 img {
+  width: 33.3%;
+}
+
 .picInfo {
   text-align: center;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 .picInfo p, .picInfo div{
@@ -231,4 +252,38 @@ transition: 1s ease;
 
 .nasaPhoto {
   padding-bottom: 5rem;
+}
+
+.picInfo button {
+    background-color: #055787; /* Green */
+    border: 1px solid #055787;
+    border-radius: 30px 30px;
+    color: white;
+    padding: 15px 32px;
+    margin-left: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8rem;
+    font-family: 'Kdam Thmor Pro',  'Source Sans Pro';
+}
+
+.picInfo .button:hover {
+  border: 1px solid aquamarine;
+}
+
+.picInfo input {
+  background-color: #055787;
+  border: 1px solid #055787;
+  border-radius: 20px 20px;
+  color: white;
+  padding: 13px 30px;
+  margin-right: 13px;
+  font-size: .8rem;
+  font-family: 'Kdam Thmor Pro',  'Source Sans Pro';
+  letter-spacing: 3px;
+}
+
+.picInfo input:hover {
+  border: 1px solid aquamarine;
 }
