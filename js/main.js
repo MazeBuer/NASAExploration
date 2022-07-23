@@ -1,13 +1,13 @@
-//Example fetch using pokemonapi.co
-document.querySelector('button').addEventListener('click', getFetch) //add event listener listenting for a click on the button
+
+document.querySelector('button').addEventListener('click', getFetch) 
 
 function getFetch(){
-  const choice = document.querySelector('input').value  //whatever is inside the box is the value 'choice'
+  const choice = document.querySelector('input').value 
 
-  const url = `https://api.nasa.gov/planetary/apod?api_key=uuLAFR0G9uDUaF3dKdt2fmoDI6khzX626ypaP5md&date=${choice}` //at the end of the URL we found Nasa has paramater of 'date' so we add &date = and choice is what we put into the search, so the date. 
+  const url = `https://api.nasa.gov/planetary/apod?api_key=uuLAFR0G9uDUaF3dKdt2fmoDI6khzX626ypaP5md&date=${choice}`
 
   fetch(url)
-      .then(res => res.json()) // parse response as JSON
+      .then(res => res.json()) 
       .then(data => {
         console.log(data)
         if (data.media_type === 'image') { //we go to the media_type in the array and if it is an 'image' do this
@@ -21,5 +21,77 @@ function getFetch(){
           console.log(`error ${err}`)
       });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let key = 'uuLAFR0G9uDUaF3dKdt2fmoDI6khzX626ypaP5md'

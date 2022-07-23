@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Russo+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/mars.css">
+    <title>Mars Rover Photo of the Day</title>
+</head>
+<body>
+		<div class="contentPic">
+			<header class="picOfDayHeader">
+				<nav>
+					<ul class="listPic">
+						<li><a href="https://www.nasa.gov/"target="_blank"><img class="nasaL picLogo" src="css/images/NASA_logo.png" alt="Nasa Logo"></a></li>
+						<li><a href="index.html"> Home</a></li>
+						<li><a href="earth.html"> Earth</a></li>
+						<li><a href="mars.html"> Mars</a></li>
+						<li><a href="PicOfTheDay.html">Pic of the Day</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<section class="picInfo">
+                    <h1>Mars Rover</h1>
+                    <h2>Pic a day see what happens</h2>
+                   
+                </section>
+			</main>
+            <section class="middle">
+                <div>
+                    <p>Select Date</p>
+                    <div>
+                        <input type="date" name="date" value="date">
+                        <button type="button" class="button" name="button">Search</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./css/images/marsimages.png">
+                </div>
+            </section>
+
+
+			<section class="roverInfo">
+                <h3 class="about">Name:</h3>
+                <h3>Landing Date</h3>
+                <p class="landingD"></p>
+                <h4>Launch Date</h4>
+                <p class="launchDate"></p>
+                <h4>Status</h4>
+                <p class="status"></p>
+            </section>
+            <section class="marsRoverPhoto">
+                <div class="container">
+                    <img class="marsdailyPhoto" src="" alt="">
+                    <p class="test"></p>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </section>
+
+		</div>
+        <script type="text/javascript" src="./js/mars.js"></script> 
+</body>
+</html>

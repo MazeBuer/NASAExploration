@@ -1,0 +1,104 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    font-size: 1vw;
+    color: white;
+  }
+
+  body {
+    width: 100%;
+    background: black;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+
+* {
+    font-family: 'Russo One', 'Kdam Thmor Pro',  'Source Sans Pro';
+} 
+ 
+ /* Header */
+ .picOfDayHeader nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+}
+  
+  
+.picLogo {
+    width: 3rem;
+}
+  
+.listPic {
+    list-style-type: none;
+}
+  
+.listPic a {
+    color: white;
+    text-decoration: none;
+}
+  
+.listPic a:hover {
+    color: #055787;
+}
+.nasaL:hover {
+    -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+  transition: 1s ease;
+}
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+  @media screen and (max-width: 800px) {
+    .picOfDayHeader nav ul {
+        justify-content: space-around;
+    }
+    nav ul li {
+        padding: 1rem;
+    }
+  }
+
+/* Main */
+main {
+    text-align: center;
+}
+
+.picInfo h1 {
+    font-size: 2.5rem;
+}
+
+/* Middle */
+
+.middle {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Rover Info */
+
+.roverInfo {
+    padding: 4rem 0 4rem 4rem;
+}
+
+/* mars rover photo */
+
+.marsRoverPhoto {
+    display: flex;
+    justify-content: center;
+}
