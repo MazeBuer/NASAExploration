@@ -2,12 +2,11 @@
 * {
     box-sizing: border-box;
     /* border: 2px solid red; */
-    font-size: 1vw;
+    font-size: 1.2rem;
     color: white;
   }
 
   body {
-    width: 100%;
     background: black;
   }
   
@@ -40,7 +39,7 @@
   
   
 .picLogo {
-    width: 3rem;
+    width: 4rem;
 }
   
 .listPic {
@@ -83,6 +82,21 @@ main {
     font-size: 2.5rem;
 }
 
+input, button {
+    background-color: #055787;
+  border: 1px solid #055787;
+  border-radius: 20px 20px;
+  color: white;
+  padding: 13px 30px;
+  margin-right: 13px;
+  font-size: .8rem;
+  font-family: 'Kdam Thmor Pro',  'Source Sans Pro';
+  letter-spacing: 3px;
+}
+
+ input:hover, button:hover {
+    border: 1px solid aquamarine;
+  }
 /* Middle */
 
 .middle {
@@ -93,12 +107,47 @@ main {
 /* Rover Info */
 
 .roverInfo {
-    padding: 4rem 0 4rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 0 10rem 0;
 }
+
 
 /* mars rover photo */
 
 .marsRoverPhoto {
     display: flex;
     justify-content: center;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 1500px) {
+    nav ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .middle{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .date {
+        width: 10vw;
+        padding: 0 5rem 0 0;
+        margin: 0;
+    }
+
+    .roverInfo {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
