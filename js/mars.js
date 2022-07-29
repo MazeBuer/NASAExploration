@@ -1,9 +1,10 @@
 document.querySelector('button').addEventListener('click', getFetch) //add event listener listenting for a click on the button
 
+
 function getFetch(){
   const choice = document.querySelector('input').value  //whatever is inside the box is the value 'choice'
   console.log(choice)
-  const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${choice}&api_key=uuLAFR0G9uDUaF3dKdt2fmoDI6khzX626ypaP5md` //at the end of the URL we found Nasa has paramater of 'date' so we add &date = and choice is what we put into the search, so the date. 
+  const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${choice}&api_key=${key}` //at the end of the URL we found Nasa has paramater of 'date' so we add &date = and choice is what we put into the search, so the date. 
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
@@ -49,10 +50,4 @@ function getFetch(){
 
 
 
-
-
-
-
-
-
-let key = 'uuLAFR0G9uDUaF3dKdt2fmoDI6khzX626ypaP5md'
+let key = 'uuLAFR0G9uDUaF3dKdt2fmoDI6khzX626ypaP5md';

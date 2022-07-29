@@ -7,7 +7,7 @@
   }
 
   body {
-    background: black;
+    background: url('https://images.unsplash.com/photo-1590272456521-1bbe160a18ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80');
   }
   
   /* Clear fix hack */
@@ -55,7 +55,7 @@
     text-decoration: none;
 }
   
-.listPic a:hover {
+ a:hover {
     color: #055787;
 }
 .nasaL:hover {
@@ -85,10 +85,12 @@ main {
 
 main h1 {
     font-size: 2rem;
+    font-weight: 200;
 }
 
 main p {
     font-size: 1rem;
+    font-weight: 100;
 }
 
 /* Middle */
@@ -117,6 +119,7 @@ body {
     min-height: 100vh;
     overflow: hidden;
     display: flex;
+    padding-bottom: 3rem;
 }
 
 .panel {
@@ -191,7 +194,7 @@ body {
 
 .name:hover {
     color: #055787;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 1px 1px 1px black;
 }
 
 /* Mobile */
