@@ -1,7 +1,7 @@
 # Exploring with NASA
 NASA exploration website made for a Kindergarten teacher to use for class instruction. Explore through the menu and see amazing photos directly from NASA equipment. 
 
-![alt tag](css/images/NASAoverview.gif)
+![alt tag](https://github.com/MazeBuer/NASAExploration/blob/main/css/images/NASAGif.gif)
 
 # How it's made
 <h3>Tech Used:</h3> HTML, CSS, JAVASCRIPT, NASA API
